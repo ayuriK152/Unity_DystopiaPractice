@@ -8,11 +8,19 @@ public class UI_DialogueLine : MonoBehaviour
 
     public Define.DialogueSubject _dialSub;
     public TextMeshProUGUI _text;
+    public string _textData;
+    private int _textLen;
 
     private void Awake()
     {
         Init();
-        _text.text = " ";
+    }
+
+    public void ShowLetters()     //TODO: 한 글자씩 업데이트
+    {
+        _textLen = _textData.Length;
+        StartCoroutine("UpdateDialogueLetter");
+        return;
     }
 
     private void Init()
@@ -25,5 +33,14 @@ public class UI_DialogueLine : MonoBehaviour
             _dialSub = Define.DialogueSubject.Unknown;
 
         _text = gameObject.GetComponentInChildren<TextMeshProUGUI>();
+    }
+
+    IEnumerator UpdateDialogueLetter ()
+    {
+        for (int i = 0; i < _textLen; i++)
+        {
+            _text.text = _textData.Substring(0, i);
+            yield return new WaitForSeconds(0.02f);
+        }
     }
 }

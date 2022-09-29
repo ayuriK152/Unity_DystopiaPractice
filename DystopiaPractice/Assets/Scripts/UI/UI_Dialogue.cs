@@ -79,10 +79,12 @@ public class UI_Dialogue : MonoBehaviour
                 go = Instantiate(_dialogueLineOpponent);
                 break;
         }
+
         if (go != null)
         {
-            go.GetComponent<UI_DialogueLine>()._text.text = dl._text;
+            go.GetComponent<UI_DialogueLine>()._textData = dl._text;
             go.transform.parent = transform;
+            go.GetComponent<UI_DialogueLine>().ShowLetters();
             go.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
             go.transform.parent = _dialogueScrollContainer.transform;
         }
