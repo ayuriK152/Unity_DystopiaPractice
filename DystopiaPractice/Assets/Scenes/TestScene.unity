@@ -442,6 +442,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d8b52ccf8048c6468eb9e99ffa06a67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dialogueLinesDatas:
+  - _dialogueSubject: 2
+    _text: Is there some information also?
+  - _dialogueSubject: 1
+    _text: What kind of?
+  - _dialogueSubject: 2
+    _text: I want your answer first.
+  - _dialogueSubject: 1
+    _text: It's on your need.
+  - _dialogueSubject: 1
+    _text: I can sell it only if I know.
+  - _dialogueSubject: 2
+    _text: What about cartel.
+  - _dialogueSubject: 1
+    _text: Well,
+  - _dialogueSubject: 1
+    _text: pay value will include my life.
+  - _dialogueSubject: 1
+    _text: You may know it is dangerous thing.
 --- !u!1 &1626943789
 GameObject:
   m_ObjectHideFlags: 0

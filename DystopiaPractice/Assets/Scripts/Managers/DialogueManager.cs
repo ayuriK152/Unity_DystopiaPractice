@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class DialogueManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    // JSON 파일을 읽어서 UI_Dialogue에 넘겨줘야함.
+    //
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

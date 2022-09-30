@@ -37,7 +37,7 @@ public class UI_DialogueLine : MonoBehaviour
 
     IEnumerator UpdateDialogueLetter ()
     {
-        for (int i = 0; i < _textLen; i++)
+        for (int i = 1; i < _textLen + 1; i++)
         {
             _text.text = _textData.Substring(0, i);
             yield return new WaitForSeconds(0.02f);

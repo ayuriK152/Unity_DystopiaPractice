@@ -1,0 +1,19 @@
+{
+  "DialogueLineData": [
+    {
+      "index": "0",
+      "_dialogueSubject": "1",
+      "_text": "Hello There!"
+    },
+    {
+      "index": "0",
+      "_dialogueSubject": "1",
+      "_text": "Hello There!"
+    },
+    {
+      "index": "0",
+      "_dialogueSubject": "1",
+      "_text": "Hello There!"
+    }
+  ]
+}
