@@ -9,7 +9,9 @@ public class Managers : MonoBehaviour
 
     #region Core
     static InputManager _inputManager = new InputManager();
-    public static InputManager Input { get { Init(); return _inputManager; } }
+    static DialogueManager _dialogueManager = new DialogueManager();
+    public static InputManager Input { get { return _inputManager; } }
+    public static DialogueManager Dialogue { get { return _dialogueManager; } }
     #endregion
 
     private void Start()
@@ -31,5 +33,7 @@ public class Managers : MonoBehaviour
             DontDestroyOnLoad(go);
             _manager = go.GetComponent<Managers>();
         }
+
+        Dialogue.Init();
     }
 }
